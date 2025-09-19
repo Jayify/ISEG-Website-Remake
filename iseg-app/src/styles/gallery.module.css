@@ -1,0 +1,87 @@
+.page {
+  background: #000;
+  color: var(--metallic-gold);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Charm", cursive;
+}
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* Masonry Grid (react-masonry-css setup) */
+.masonryGrid {
+  display: flex;
+  width: auto;
+  padding: 0 1rem;
+  margin: 0 10vw;
+}
+.masonryColumn {
+  padding-left: 1rem; /* gutter */
+  background-clip: padding-box;
+  flex: 1;
+}
+
+/* Each item */
+.item {
+  margin-bottom: 1rem;
+  position: relative;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Image wrapper + hover */
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.08);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+  color: var(--metallic-gold);
+  padding: 0.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+  font-size: 0.95rem;
+  font-family: "Courier Prime", monospace;
+}
