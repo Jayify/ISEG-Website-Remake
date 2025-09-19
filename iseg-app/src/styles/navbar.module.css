@@ -1,0 +1,69 @@
+.navWrapper {
+  position: relative; /* parent for absolute positioning */
+  overflow: visible;  /* make sure logo isn’t cut off */
+}
+
+/* Top Bar */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black);
+  color: var(--metallic-gold);
+  font-family: "Courier Prime", monospace;
+  font-size: 1.1rem;
+  padding: 0.3rem 2rem 0.4rem 2rem; 
+}
+.accounts, .motto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Main Navbar */
+.navContainer {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--metallic-gold);
+  padding: 1.5rem 2rem; /* make taller so logo has room */
+  z-index: 5;
+  color: black;
+}
+
+.navbar a {
+    margin: 0 40px;
+}
+.navbarLeft, .navbarRight {
+    width: 100%;
+    display: flex;
+    
+}
+.navbarLeft {
+    justify-content: end;
+    margin-right: 100px;
+}
+.navbarRight {
+    justify-content: start;
+    margin-left: 100px;
+}
+
+/* Logo */
+.logoWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* vertically and horizontally center */
+  z-index: 10;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 3px solid var(--black);
+  background: var(--white);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
