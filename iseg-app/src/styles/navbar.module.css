@@ -9,15 +9,20 @@
   justify-content: space-between;
   background-color: var(--black);
   color: var(--metallic-gold);
-  font-family: "Courier Prime", monospace;
-  font-size: 1.1rem;
-  padding: 0.3rem 2rem 0.4rem 2rem; 
+  /* font-family: "Courier Prime", monospace; */
+  font-family: "Cutive Mono", monospace;
+  font-size: 1rem;
+  padding: 0.4rem 2rem 0.5rem 2rem; 
 }
 .accounts, .motto {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
+}
+
+.accounts a {
+  text-decoration: underline;
 }
 
 /* Main Navbar */

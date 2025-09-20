@@ -4,6 +4,7 @@
   --gold: #FFD700;
   --metallic-gold: #D4AF37; 
   --hero-black: #0A0708;
+  --dark-gray: rgba(255, 255, 255, 0.05);
 }
 
 html,
@@ -19,6 +20,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: "Cutive Mono", monospace;
 }
 
 * {

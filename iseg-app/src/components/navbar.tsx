@@ -8,7 +8,7 @@ export default function Navbar() {
         {/* Top Bar */}
         <div className={styles.topBar}>
             <span className={styles.motto}>
-                ~ Auctoritas, Comitas, Gravitas ~
+                <i>Auctoritas, Comitas, Gravitas</i>
             </span>
             <span className={styles.accounts}>
                 <Link href="/login">Member Login</Link>
